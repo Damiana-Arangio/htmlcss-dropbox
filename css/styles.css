@@ -1,0 +1,23 @@
+/*! REGOLE GENERALI PAGINA */
+
+/** RESET PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* font-size: 13px;  */
+}
+
+/*! CLASSI RIUTILIZZABILI */
+
+/** CONTAINER PAGINA */
+
+/* Container Nav-Header */
+
+/* Container Main */
+
+/* Container Hero-Header/Footer */
