@@ -1,4 +1,4 @@
-/*! REGOLE GENERALI PAGINA */
+/*! REGOLE GENERALI */
 
 /** RESET PAGINA */
 * {
@@ -9,9 +9,34 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    /* font-size: 13px;  */
+    font-size: 13px;
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 5px;
+    background-color: blue;
+    border-color: transparent;
+}
+
+button > a {
+    color: white;
+}
 
 /*! CONTENITORI GENERICI PAGINA */
 
@@ -21,7 +46,7 @@ body {
     margin: 0 auto;
 
     /* Debug */
-    height: 300px;
+    /* height: 300px; */
     background-color: rgb(0, 255, 8);
 }
 
@@ -33,8 +58,8 @@ body {
 
 /*! CLASSI RIUTILIZZABILI */
 
-.padding-top-30 {
-    padding-top: 30px;
+.padding-top-50 {
+    padding-top: 50px;
 }
 
 .margin-top-30 {
@@ -45,10 +70,6 @@ body {
     margin-bottom: 50px; 
 }
 
-/* .margin-top-bottom-20 {
-    margin: 20px 0;
-} */
-
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
@@ -57,18 +78,35 @@ body {
     border: 1px solid black;
 }
 
-
 /*! REGOLE FLEXBOX */
 
 .flex-row {
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
+
 }
 
 /* .flex-column {
     display: flex;
     flex-direction: row;
 } */
+
+.item-center-cross-axis {
+    align-self: center;
+}
+
+/* .items-center {
+    align-items: center;
+} */
+
+.items-start-cross-axis {
+    justify-content: flex-start;
+}
+
+.space-between {
+    justify-content: space-between;
+}
 
 .gap {
     gap: 20px;
@@ -78,9 +116,7 @@ body {
     flex-wrap: wrap;
 }
 
-.item-center-cross-axis {
-    align-self: center;
-}
+
 /*! INTESTAZIONE PAGINA */
 
 /** NAV-HEADER */
@@ -89,24 +125,63 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: white;
 }
 
-.nav-inner { 
+/* .nav-header > ul > li {
+    0 20px;
+} */
+
+.nav-header li {
+    padding: 0 15px;
+}
+
+.logo {
+    width: 75px;
+}
+
+/* .nav-inner { 
     width: 97%;
     margin: 0 auto;
     height: 100%;
 
-    /* Debug */
+    Debug
     background-color: red;
 }
 
 /** HERO HEADER */
-.bg_color-lightblue {
-    background-color: rgb(0, 145, 255);
+.hero-header {
+    width: 100%;
 }
 
+.bg_color-lightblue {
+    background-color: rgb(92, 150, 195);
+}
+
+.width-description-hero {
+    flex-basis: 25%;
+
+    /* Debug */
+    /* height: 300px;                  Per debug Hero */
+    /*  height: 200px;*/
+    /* Per debug dropbox */
+    background-color: rgb(155, 216, 195);
+}
+
+.width-img-hero {
+    flex-basis: 75%;
+
+    /* Debug */
+    /* height: 300px;                 Per debug Hero */
+    /* height: 330px; */
+    /* Per debug dropbox */
+    background-color: rgb(7, 248, 232);
+}
+
+#freccia {
+    font-size: 35px;
+}
 /*! CONTENUTO PRINCIPALE */
 
 /** SEZIONE PIANI BUSINESS DROPBOX */
@@ -155,7 +230,6 @@ body {
     height: 200px;
     background-color: rgb(155, 216, 195);
 }
-
 
 /** SEZIONE OPERAZIONI DROPBOX BUSINESS */
 .section-operazioni-dropbox {
