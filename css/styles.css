@@ -9,11 +9,11 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 56px;
     font-weight: bold;
 }
 
@@ -28,6 +28,10 @@ a {
     color: black;
 }
 
+.decoration-underline {
+    text-decoration: underline;
+}
+
 button {
     padding: 5px;
     background-color: blue;
@@ -36,6 +40,10 @@ button {
 
 button > a {
     color: white;
+}
+
+button:hover {
+    opacity: 0.7;
 }
 
 /*! CONTENITORI GENERICI PAGINA */
@@ -52,14 +60,31 @@ button > a {
 
 /* Container main */
 .container-main {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
+}
+
+.container-piani {
+    margin: 15px;
 }
 
 /*! CLASSI RIUTILIZZABILI */
 
+/** SPAZIATURE */
 .padding-top-50 {
     padding-top: 50px;
+}
+
+.padding-top-bottom-7 {
+    padding: 7px 0;
+}
+
+.padding-left15 {
+    padding-left: 15px;
+}
+
+.margin-top-bottom7 {
+    margin: 7px 0;
 }
 
 .margin-top-30 {
@@ -70,12 +95,36 @@ button > a {
     margin-bottom: 50px; 
 }
 
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
 
+.margin-right7 {
+    margin-right: 7;
+}
+
+/** BOTTONI */
+.button-large {
+    width: 190px;
+    height: 40px;
+    text-align: center;
+}
+
+/** BORDI */
 .border {
-    border: 1px solid black;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.color-grey {
+    color: grey;
+}
+
+/** TESTO */
+.text-blu {
+    color: rgb(47, 83, 230);
 }
 
 /*! REGOLE FLEXBOX */
@@ -84,21 +133,11 @@ button > a {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-
 }
-
-/* .flex-column {
-    display: flex;
-    flex-direction: row;
-} */
 
 .item-center-cross-axis {
     align-self: center;
 }
-
-/* .items-center {
-    align-items: center;
-} */
 
 .items-start-cross-axis {
     justify-content: flex-start;
@@ -128,10 +167,6 @@ button > a {
     height: 50px;
     background-color: white;
 }
-
-/* .nav-header > ul > li {
-    0 20px;
-} */
 
 .nav-header li {
     padding: 0 15px;
@@ -182,28 +217,32 @@ button > a {
 #freccia {
     font-size: 35px;
 }
+
+
 /*! CONTENUTO PRINCIPALE */
 
 /** SEZIONE PIANI BUSINESS DROPBOX */
-.section-piani-dropbox {
-
-    /* Debug */
-    background-color: blueviolet;
-}
 
 .width-piani-business {
     flex-basis: calc((100% - 42px) / 3);       /* 42 = 20pxgap + 1px bordi */
-
-    /* Debug */
-    height: 300px;
-    background-color: orange;
 }
 
-.piano-enterprise-team {
+.container-enterprise-team {
+    position: relative;
+}
 
-    /* Debug */
-    height: 200px;
-    background-color: orange;
+.position-button-enterprise-team {
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+.title-piano {
+    text-align: center;
+}
+
+.width-hr-51 {
+    width: 51px;
 }
 
 /** SEZIONE PARTNER DROPBOX */
@@ -265,4 +304,3 @@ footer {
     /* Debug */
     height: 300px;
 }
-

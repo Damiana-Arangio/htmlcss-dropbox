@@ -68,7 +68,7 @@
                     <!-- Paragrafo + Bottone Hero -->
                     <div class="width-description-hero">
                         <p class="margin-bottom-20"> Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente. </p>
-                        <button class="margin-bottom-20"> <a href="#"> Inizia la tua prova gratuita </a> </button> </li>
+                        <button class="margin-bottom-20 button-large"> <a href="#"> Inizia la tua prova gratuita </a> </button> </li>
                         <div class=" margin-bottom-20"> Annulla in qualsiasi momento </div>
                         <div> <a href="#" id="freccia"> <i class="fa-solid fa-arrow-down"></i> </a></div>
                     </div>
@@ -92,42 +92,256 @@
 
 
         <!------------------------------------------- SEZIONE PIANI BUSINESS DROPBOX --------------------------------------------------->
-        <section class="section-piani-dropbox margin-bottom-50">
+        <section class="margin-bottom-50">
             <h2 class="margin-bottom-20"> Trova il piano business che fa per te </h2>
 
             <!-- Tipo Fatturazione Mensile/Annuale-->
-            <div class="margin-bottom-20"> checkbox </div>
-
-            <!-- Contenitore flex dei piani business -->
-            <div class="flex-row gap">
-
-                <!-- Piano Professional -->
-                <article class="width-piani-business border">
-                    <div class="border"> Tipologia piano </div>
-                    <div> Contenuto piano </div>
-                </article>
-
-                <!-- Piano Advanced -->
-                <article class="width-piani-business border">
-                    <div class="border"> Tipologia piano </div>
-                    <div> Contenuto piano </div>
-                </article> 
-                
-                <!-- Piano Enterprise - Azienda -->
-                <article class="width-piani-business border">
-                    <div class="border"> Tipologia piano </div>
-                    <div> Contenuto piano </div>
-                </article>
+            <div class="margin-bottom-20">
+                <input type="radio" name="Tipo di fatturazione" value="Fatturazione mensile"> Fatturazione mensile
+                <span class="padding-left15"></span>
+                <input type="radio" name="Tipo di fatturazione" value="Fatturazione mensile"> Fatturazione annuale
             </div>
 
-            <!-- Contenitore Enterprise - Team -->
-            <div class="margin-top-30">
+            <!-- CONTENITORE PIANI BUSINESS --> 
+            <div class="flex-row gap">
 
-                <!--  Piano Enterprise - Azienda -->
-                <article class="piano-enterprise-team border">
-                    <div class="border"> Tipologia piano </div>
-                    <div> Contenuto piano </div>
+                <!-- PIANO PROFESSIONAL -->
+                <article class="width-piani-business border">
+                    
+                    <!-- Titolo -->
+                    <div class="border margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Singolo </h4>
+                    </div>
+
+                    <!-- Contenuto piano -->
+                    <div class="container-piani">
+
+                        <!-- Titolo - prezzo -->
+                        <h3> Professional </h3>
+                        <br>
+                        <strong> &euro; 12.00</strong>
+                        <br>
+                        <span class="color-grey">/mese</span>
+
+                        <!-- Lista1 -->
+                        <ul>
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-user"></i> </div>
+                                <div> 1 utente </div>
+                            </li>
+
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-folder"></i> </div>
+                                <div> 5 TB di spazio di archiviazione sicuro </div>
+                            </li>
+
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-share-nodes"></i> </div>
+                                <div> Funzioni di produttività premium e condivisione di file semplice e sicura </div>
+                            </li>
+                        </ul>
+
+                        <!-- Bottone prova gratis 30 giorni -->
+                        <br>
+                        <br>
+                        <button class="margin-top-30 margin-bottom-20 button-large"> <a href="#"> Prova gratis per 30 giorni </a> </button> </li>
+
+                        <!-- Link acquista ora -->
+                        <div class="margin-bottom-30"> oppure <a href="#" class="decoration-underline text-blu"> acquista ora </a> </div>
+
+                        <!-- Linea -->
+                        <hr class="width-hr-51 margin-bottom-30">
+
+                        <!-- Punti salienti del piano -->
+                        <h4> Punti Salienti del piano </h4>
+
+                        <!-- Lista2 -->
+                        <ul>
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i></div>
+                                <div> Invia file fino a 100 GB con Dropbox Transfert </div>
+                            </li>
+                            
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Cartelle offline su dispositivi mobili </div>
+                            </li>                        
+                        </ul>
+                    </div>
                 </article>
+
+                <!-- PIANO ADVANCED -->
+                <article class="width-piani-business border">
+                
+                    <!-- Titolo -->
+                    <div class="border margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Team </h4>
+                    </div>
+                
+                    <!-- Contenuto piano -->
+                    <div class="container-piani">
+                
+                        <!-- Titolo - prezzo -->
+                        <h3> Anvanced </h3>
+                        <br>
+                        <strong> &euro; 18.00</strong>
+                        <br>
+                        <span class="color-grey">/utente/mese</span>
+                
+                        <!-- Lista1 -->
+                        <ul>
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-users"></i> </div>
+                                <div> 3 o più utenti </div>
+                            </li>
+                
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-folder"></i> </div>
+                                <div> Tutto lo spazio di cui ha bisogno il tuo team </div>
+                            </li>
+                
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-share-nodes"></i> </div>
+                                <div> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team </div>
+                            </li>
+                        </ul>
+                
+                        <!-- Bottone prova gratis 30 giorni -->
+                        <br>
+                        <br>
+                        <button class="margin-top-30 margin-bottom-20 button-large"> <a href="#"> Prova gratis per 30 giorni </a> </button>
+
+                        <!-- Link acquista ora -->
+                        <div class="margin-bottom-30"> oppure <a href="#" class="decoration-underline text-blu"> acquista ora </a> </div>
+
+                        <!-- Linea -->
+                        <hr class="width-hr-51 margin-bottom-30">
+                
+                        <!-- Punti salienti del piano -->
+                        <h4> Punti Salienti del piano </h4>
+                
+                        <!-- Lista2 -->
+                        <ul>
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i></div>
+                                <div> Nessun limite di spazio </div>
+                            </li>
+                
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Cartelle offline su dispositivi mobili </div>
+                            </li>
+
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Risparmio del 50% rispetto alle iscrizioni singole </div>
+                            </li>        
+                            
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Possibilità di inserire nuovi membri del team </div>
+                            </li>
+
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Gestione dei permessi in base ai ruoli </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <!-- PIANO ENTERPRISE AZIENDA -->
+                <article class="width-piani-business border">
+                
+                    <!-- Titolo -->
+                    <div class="border margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Azienda </h4>
+                    </div>
+                
+                    <!-- Contenuto piano -->
+                    <div class="container-piani">
+                
+                        <!-- Titolo - prezzo -->
+                        <h3> Enterprise </h3>
+                        <br>
+                        <strong> Contattaci </strong>
+                        <br>
+                        <span class="color-grey"> - </span>
+                
+                        <!-- Lista1 -->
+                        <ul>
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-user"></i> </div>
+                                <div> 10 o più utenti </div>
+                            </li>
+                
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-folder"></i> </div>
+                                <div> Soluzioni personalizzabili per la tua azienda </div>
+                            </li>
+                
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-share-nodes"></i> </div>
+                                <div> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala </div>
+                            </li>
+                        </ul>
+                
+                        <!-- Bottone prova gratis 30 giorni -->
+                        <button class="margin-top-30 margin-bottom-20 button-large"> <a href="#"> Contattaci </a> </button>
+                        
+                        <!-- Link acquista ora -->
+                        <div class="margin-bottom-30"> oppure <a href="#" class="decoration-underline text-blu"> acquista ora </a> </div>
+
+                        <!-- Linea -->
+                        <hr class="width-hr-51 margin-bottom-30">
+                
+                        <!-- Punti salienti del piano -->
+                        <h4> Punti Salienti del piano </h4>
+                
+                        <!-- Lista2 -->
+                        <ul>
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i></div>
+                                <div> Cartelle offline su dispositivi mobili </div>
+                            </li>
+                
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Servizio assistenza h24</div>
+                            </li>
+
+                            <li class="margin-top-30 margin-bottom-20 flex-row gap">
+                                <div> <i class="fa-solid fa-check" style="color: #4a64e3;"></i> </div>
+                                <div> Possibilità di personalizzazione totale</div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </article>            
+            </div>
+
+            <!-- CONTENITORE ENTERPRISE TEAM -->
+            <div class="margin-top-30 container-enterprise-team">
+
+                <!-- PIANO ENTERPRISE TEAM -->
+                <article class="border">
+                    <div class="border margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Team </h4>
+                    </div>                    
+                    
+                    <!-- Titolo + contenuto -->
+                    <h3> Enterprise </h3>
+                    <br>
+                    <h4> Contatta l'ufficio vendite per i prezzi</h4>
+                    <br>
+                    <br>
+                    <div> Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala </div>
+                    <br>
+                    <button class="margin-top-30 margin-bottom-20 button-large position-button-enterprise-team"> <a href="#"> Contatta l'ufficio vendite </a> </button>
+                </article>
+
+
             </div>
         </section>
             
