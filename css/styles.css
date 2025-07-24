@@ -17,7 +17,7 @@ body {
 
 /* Container Hero-Header e Footer */
 .container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 
     /* Debug */
@@ -27,18 +27,48 @@ body {
 
 /* Container main */
 .container-main {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
 }
 
 /*! CLASSI RIUTILIZZABILI */
+
 .padding-top-30 {
     padding-top: 30px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
 }
 
 .margin-bottom-50 {
     margin-bottom: 50px; 
 }
+
+.border {
+    border: 1px solid black;
+}
+
+
+/*! REGOLE FLEXBOX */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.gap {
+    gap: 20px;
+}
+
+/* .wrap {
+    flex-wrap: wrap;
+} */
 
 /*! INTESTAZIONE PAGINA */
 
@@ -52,8 +82,7 @@ body {
     background-color: white;
 }
 
-.nav-inner {
-    
+.nav-inner { 
     width: 97%;
     margin: 0 auto;
     height: 100%;
@@ -69,33 +98,53 @@ body {
 
 /*! CONTENUTO PRINCIPALE */
 
-.piano-dropbox {
+/** PIANO DROPBOX */
+.section-piano-dropbox {
 
     /* Debug */
-    height: 500px;
     background-color: blueviolet;
 }
 
-.partner-dropbox {
+.width-piano-dropbox {
+    flex-basis: calc((100% - 42px) / 3);
+    flex-shrink: 1;
+
+    /* Debug */
+    height: 300px;
+    background-color: orange;
+}
+
+.enterprise-team {
+
+    /* Debug */
+    height: 200px;
+    background-color: orange;
+}
+
+/** PARTNER DROPBOX */
+.section-partner-dropbox {
 
     /* Debug */
     height: 300px;
     background-color: rgb(226, 208, 43);
 }
 
-.operazioni-dropbox {
+/** OPERAZIONI DROPBOX */
+.section-operazioni-dropbox {
 
     /* Debug */
     height: 500px;
     background-color: blueviolet;
 }
 
-.clienti-dropbox {
+/** CLIENTI DROPBOX */
+.section-clienti-dropbox {
 
     /* Debug */
     height: 150px;
     background-color: rgb(226, 208, 43);
 }
+
 
 /*! PIE' DI PAGINA */
 
@@ -106,3 +155,4 @@ footer {
     /* Debug */
     height: 300px;
 }
+
