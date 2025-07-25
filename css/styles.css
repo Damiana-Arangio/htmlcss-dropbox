@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 57px;
     font-weight: bold;
 }
 
@@ -26,10 +26,6 @@ li {
 a {
     text-decoration: none;
     color: black;
-}
-
-.decoration-underline {
-    text-decoration: underline;
 }
 
 button {
@@ -46,16 +42,13 @@ button:hover {
     opacity: 0.7;
 }
 
+
 /*! CONTENITORI GENERICI PAGINA */
 
 /* Container Hero-Header e Footer */
 .container {
     width: 60%;
     margin: 0 auto;
-
-    /* Debug */
-    /* height: 300px; */
-    background-color: rgb(0, 255, 8);
 }
 
 /* Container main */
@@ -68,13 +61,12 @@ button:hover {
     margin: 15px;
 }
 
+
 /*! CLASSI RIUTILIZZABILI */
 
 /** SPAZIATURE */
-.padding-top-50 {
-    padding-top: 50px;
-}
 
+/* Padding */
 .padding-top-bottom-7 {
     padding: 7px 0;
 }
@@ -83,28 +75,44 @@ button:hover {
     padding-left: 15px;
 }
 
+.padding-top-25 {
+    padding-top: 25px;
+}
+
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+
+/* Margin */
 .margin-top-bottom7 {
     margin: 7px 0;
+}
+
+.margin-right7 {
+    margin-right: 7;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 
 .margin-top-30 {
     margin-top: 30px;
 }
 
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
 .margin-bottom-50 {
     margin-bottom: 50px; 
 }
 
-.margin-bottom-30 {
-    margin-bottom: 30px;
-}
-.margin-bottom-20 {
-    margin-bottom: 20px;
+.margin-bottom-100 {
+    margin-bottom: 100px;
 }
 
-.margin-right7 {
-    margin-right: 7;
-}
 
 /** BOTTONI */
 .button-large {
@@ -122,10 +130,6 @@ button:hover {
     color: grey;
 }
 
-/** TESTO */
-.text-blu {
-    color: rgb(47, 83, 230);
-}
 
 /*! REGOLE FLEXBOX */
 
@@ -137,6 +141,10 @@ button:hover {
 
 .item-center-cross-axis {
     align-self: center;
+}
+
+.items-start-cross-axis {
+    align-items: center;
 }
 
 .items-start-cross-axis {
@@ -161,11 +169,22 @@ button:hover {
 /** NAV-HEADER */
 
 .nav-header {
-    position: fixed;
-    top: 0;
     width: 100%;
     height: 50px;
     background-color: white;
+
+    /* Position */
+    position: fixed;
+    top: 0;
+}
+
+/* Link - Nav in hover */
+header a:not(.button):hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;                /* Quando i link della nav (tranne button) 
+                                                    sono in hover, sposta la sottolineatura 
+                                                    20px sotto la posizione di default 
+                                                */
 }
 
 .nav-header li {
@@ -176,42 +195,28 @@ button:hover {
     width: 75px;
 }
 
-/* .nav-inner { 
-    width: 97%;
-    margin: 0 auto;
-    height: 100%;
-
-    Debug
-    background-color: red;
-}
 
 /** HERO HEADER */
 .hero-header {
     width: 100%;
 }
 
+/* Position Hero (Description-hero + img) */
+.position-hero {
+    position:relative;
+    top: 62px; 
+}
+
 .bg_color-lightblue {
-    background-color: rgb(92, 150, 195);
+    background-color: rgb(152, 185, 212);
 }
 
 .width-description-hero {
-    flex-basis: 25%;
-
-    /* Debug */
-    /* height: 300px;                  Per debug Hero */
-    /*  height: 200px;*/
-    /* Per debug dropbox */
-    background-color: rgb(155, 216, 195);
+    flex-basis: 30%;
 }
 
 .width-img-hero {
-    flex-basis: 75%;
-
-    /* Debug */
-    /* height: 300px;                 Per debug Hero */
-    /* height: 330px; */
-    /* Per debug dropbox */
-    background-color: rgb(7, 248, 232);
+    flex-basis: 70%;
 }
 
 #freccia {
@@ -222,7 +227,6 @@ button:hover {
 /*! CONTENUTO PRINCIPALE */
 
 /** SEZIONE PIANI BUSINESS DROPBOX */
-
 .width-piani-business {
     flex-basis: calc((100% - 42px) / 3);       /* 42 = 20pxgap + 1px bordi */
 }
@@ -241,12 +245,25 @@ button:hover {
     text-align: center;
 }
 
+/* Larghezza linea hr */
 .width-hr-51 {
     width: 51px;
 }
 
-/** SEZIONE PARTNER DROPBOX */
+/** Link Acquista Ora */
 
+/* Sottolineatura link */
+.decoration-underline {
+    text-decoration: underline;
+}
+
+/* Colore link */
+.text-blu {
+    color: rgb(47, 83, 230);
+}
+
+
+/** SEZIONE PARTNER DROPBOX */
 .section-partner-dropbox {
 
     /* Debug */
@@ -302,5 +319,12 @@ footer {
     background-color: black;
 
     /* Debug */
+    /* height: 300px; */
+}
+
+.debug-footer {
+
+    /* Debug */
     height: 300px;
+    background-color: rgb(0, 255, 8);
 }
