@@ -9,7 +9,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 h1 {
@@ -47,7 +47,7 @@ button:hover {
 
 /* Container Hero-Header e Footer */
 .container {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -75,11 +75,7 @@ button:hover {
     padding-left: 15px;
 }
 
-.padding-top-25 {
-    padding-top: 25px;
-}
-
-.padding-top-50 {
+.padding-top-50 {               /* section-hero-header e h1 section-hero-header */
     padding-top: 50px;
 }
 
@@ -101,15 +97,15 @@ button:hover {
     margin-top: 30px;
 }
 
-.margin-bottom-30 {
+.margin-bottom-30 {                 /* Description-hero */
     margin-bottom: 30px;
 }
 
-.margin-bottom-50 {
+.margin-bottom-50 {                 /* Description-hero + section main */
     margin-bottom: 50px; 
 }
 
-.margin-bottom-100 {
+.margin-bottom-100 {                /* Header */   
     margin-bottom: 100px;
 }
 
@@ -140,10 +136,10 @@ button:hover {
 }
 
 .item-center-cross-axis {
-    align-self: center;
+    align-self: center;                 /* usato in descrizione-dropbox -> da spostare? */
 }
 
-.items-start-cross-axis {
+.items-center-cross-axis {
     align-items: center;
 }
 
@@ -192,32 +188,36 @@ header a:not(.button):hover {
 }
 
 .logo {
-    width: 75px;
+    width: 100%;                                /* 100% di li */
 }
 
 
 /** HERO HEADER */
-.hero-header {
+
+.width-container-description-hero {
+    flex-basis: 25%;
+}
+
+.width-container-img-hero {
+    flex-basis: 75%;
+}
+
+.width-img-hero {
     width: 100%;
 }
 
 /* Position Hero (Description-hero + img) */
-.position-hero {
+.position-container-hero {
     position:relative;
-    top: 62px; 
+    bottom: -80px;;
 }
 
 .bg_color-lightblue {
     background-color: rgb(152, 185, 212);
 }
 
-.width-description-hero {
-    flex-basis: 30%;
-}
 
-.width-img-hero {
-    flex-basis: 70%;
-}
+
 
 #freccia {
     font-size: 35px;
