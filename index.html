@@ -33,7 +33,7 @@
     <!-- ------------------- -->
     <!-- INTESTAZIONE PAGINA -->
     <!-- ------------------- -->
-     <header class="margin-bottom-100">
+     <header class="margin-bottom-150">
 
         <!-- Barra di Navigazione Header -->
         <nav class="nav-header flex-row space-between items-center-cross-axis">
@@ -56,10 +56,10 @@
         </nav>
 
         <!-- Sezione Hero-Header -->
-        <section class="bg_color-lightblue padding-top-50"> 
+        <section class="section-hero"> 
         
             <div class="container">  
-                <h1 class="padding-top-50"> Tutto ciò che ti serve per il lavoro, in un unico posto </h1>
+                <h1> Tutto ciò che ti serve per il lavoro, in un unico posto </h1>
 
                 <!-- Contenitore flex paragrafo + img Hero -->
                 <div class="flex-row position-container-hero">
@@ -106,17 +106,19 @@
             <div class="flex-row gap">
 
                 <!-- PIANO PROFESSIONAL -->
-                <article class="width-piani-business border">
+                <article class="width-piani-business border-card">
                     
-                    <!-- Titolo -->
-                    <div class="border margin-bottom-20">
-                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Singolo </h4>
+                    <!-- Header card  -->
+                    <div class="border-header-card margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> 
+                            <i class="fa-solid fa-user"></i> Singolo 
+                        </h4>
                     </div>
 
-                    <!-- Contenuto piano -->
-                    <div class="container-piani">
+                    <!-- Content card -->
+                    <div class="container-piani-business">
 
-                        <!-- Titolo - prezzo -->
+                        <!-- Nome piano & Prezzo -->
                         <h3> Professional </h3>
                         <br>
                         <strong> &euro; 12.00</strong>
@@ -142,8 +144,6 @@
                         </ul>
 
                         <!-- Bottone prova gratis 30 giorni -->
-                        <br>
-                        <br>
                         <button class="margin-top-30 margin-bottom-20 button-large"> <a href="#"> Prova gratis per 30 giorni </a> </button> </li>
 
                         <!-- Link acquista ora -->
@@ -171,17 +171,19 @@
                 </article>
 
                 <!-- PIANO ADVANCED -->
-                <article class="width-piani-business border">
+                <article class="width-piani-business border-card">
                 
-                    <!-- Titolo -->
-                    <div class="border margin-bottom-20">
-                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Team </h4>
+                    <!-- Header card -->
+                    <div class="border-header-card margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> 
+                            <i class="fa-solid fa-user"></i> Team 
+                        </h4>
                     </div>
                 
-                    <!-- Contenuto piano -->
+                    <!-- Content card -->
                     <div class="container-piani">
                 
-                        <!-- Titolo - prezzo -->
+                        <!-- Nome piano & Prezzo -->
                         <h3> Anvanced </h3>
                         <br>
                         <strong> &euro; 18.00</strong>
@@ -207,8 +209,6 @@
                         </ul>
                 
                         <!-- Bottone prova gratis 30 giorni -->
-                        <br>
-                        <br>
                         <button class="margin-top-30 margin-bottom-20 button-large"> <a href="#"> Prova gratis per 30 giorni </a> </button>
 
                         <!-- Link acquista ora -->
@@ -251,17 +251,19 @@
                 </article>
                 
                 <!-- PIANO ENTERPRISE AZIENDA -->
-                <article class="width-piani-business border">
+                <article class="width-piani-business border-card">
                 
-                    <!-- Titolo -->
-                    <div class="border margin-bottom-20">
-                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Azienda </h4>
+                    <!-- Header card -->
+                    <div class="border-header-card margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> 
+                            <i class="fa-solid fa-user"></i> Azienda 
+                        </h4>
                     </div>
                 
-                    <!-- Contenuto piano -->
+                    <!-- Content card -->
                     <div class="container-piani">
                 
-                        <!-- Titolo - prezzo -->
+                        <!-- Nome piano & Prezzo -->
                         <h3> Enterprise </h3>
                         <br>
                         <strong> Contattaci </strong>
@@ -282,7 +284,7 @@
                 
                             <li class="margin-top-30 margin-bottom-20 flex-row gap">
                                 <div> <i class="fa-solid fa-share-nodes"></i> </div>
-                                <div> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala </div>
+                                <div> Assistenza personalizzata per aiutare gli amministratori nella gestione su larga scala </div>
                             </li>
                         </ul>
                 
@@ -325,12 +327,17 @@
             <div class="margin-top-30 container-enterprise-team">
 
                 <!-- PIANO ENTERPRISE TEAM -->
-                <article class="border">
-                    <div class="border margin-bottom-20">
-                        <h4 class="padding-top-bottom-7 title-piano"> <i class="fa-solid fa-user"></i> Team </h4>
+                <article class="border-card">
+
+                    <!-- Header card -->
+                    <div class="border-header-card margin-bottom-20">
+                        <h4 class="padding-top-bottom-7 title-piano"> 
+                            <i class="fa-solid fa-user"></i> Team 
+                        </h4>
                     </div>                    
                     
-                    <!-- Titolo + contenuto -->
+                    <!-- Content card -->
+                    <!-- Nome piano & Info Prezzo & Descrizione -->
                     <h3> Enterprise </h3>
                     <br>
                     <h4> Contatta l'ufficio vendite per i prezzi</h4>
@@ -347,18 +354,18 @@
             
 
         <!-------------------------------------------- SEZIONE PARTNER DROPBOX --------------------------------------------------------->
-        <section class=" section-partner-dropbox flex-row gap margin-bottom-50">
+        <section class="flex-row gap margin-bottom-50">
 
             <!-- Immagine partner dropbox -->
-            <figure class="width-img-partner">
-                <div> immagine partner </div>
-            </figure>
+                <figure class="container-img-partner">
+                    <img src="img/partner.png" alt="" class="width-img-partner">
+                </figure>
 
             <!-- Descrizione partner dropbox -->
             <div class="width-description-partner item-center-cross-axis">
                 <h4 class="margin-bottom-20"> Entra in contatto con un partner Dropbox </h4>
-                <p class="margin-bottom-20"> paragrafo</p>
-                <div> Bottone </div>
+                <p class="margin-bottom-20"> Trova un partner dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                <button class="button-partner"> <a href="#" class="a-partner"> Trova un partner </a></button>
             </div>
         </section>
 
@@ -417,8 +424,8 @@
         
         <!-------------------------------------------- SEZIONE CLIENTI DROPBOX BUSINESS ------------------------------------------------>
         <section class="width-clienti-dropbox section-clienti-dropbox margin-bottom-50">
-            <h3 class="margin-bottom-20"> Più di 500.000 team utilizzano Dropbox Business </h3>
-            <div> link </div>
+            <h2 class="margin-bottom-20"> Più di 500.000 team utilizzano Dropbox Business </h2>
+            <a href="#" class="decoration-underline text-blu"> Scopri di più sui nostri clienti </a>
         </section>
 
     </main>

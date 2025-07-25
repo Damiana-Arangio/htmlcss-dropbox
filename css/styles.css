@@ -7,14 +7,10 @@
     box-sizing: border-box;
 }
 
+/** ELEMENTI BASE */
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-}
-
-h1 {
-    font-size: 57px;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 li {
@@ -33,7 +29,6 @@ button {
     background-color: blue;
     border-color: transparent;
 }
-
 button > a {
     color: white;
 }
@@ -43,70 +38,52 @@ button:hover {
 }
 
 
-/*! CONTENITORI GENERICI PAGINA */
+/*! CLASSI RIUTILIZZABILI */
 
-/* Container Hero-Header e Footer */
-.container {
+/** CONTENITORI GENERICI PAGINA */
+.container {                                /* Container Hero-Header e Footer */
     width: 70%;
     margin: 0 auto;
 }
-
-/* Container main */
 .container-main {
     width: 50%;
     margin: 0 auto;
 }
-
-.container-piani {
+.container-piani-business {
     margin: 15px;
 }
 
-
-/*! CLASSI RIUTILIZZABILI */
-
 /** SPAZIATURE */
 
-/* Padding */
+/*? Padding */
 .padding-top-bottom-7 {
     padding: 7px 0;
 }
-
-.padding-left15 {
+.padding-left15 {                 /* Tipo Fatturazione Mensile/Annuale section piani business*/
     padding-left: 15px;
 }
-
 .padding-top-50 {               /* section-hero-header e h1 section-hero-header */
     padding-top: 50px;
 }
 
-
-/* Margin */
+/*? Margin */
 .margin-top-bottom7 {
     margin: 7px 0;
 }
-
 .margin-right7 {
     margin-right: 7;
 }
-
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
-
 .margin-top-30 {
     margin-top: 30px;
 }
-
 .margin-bottom-30 {                 /* Description-hero */
     margin-bottom: 30px;
 }
-
 .margin-bottom-50 {                 /* Description-hero + section main */
     margin-bottom: 50px; 
-}
-
-.margin-bottom-100 {                /* Header */   
-    margin-bottom: 100px;
 }
 
 
@@ -115,11 +92,6 @@ button:hover {
     width: 190px;
     height: 40px;
     text-align: center;
-}
-
-/** BORDI */
-.border {
-    border: 1px solid rgb(118, 118, 118);
 }
 
 .color-grey {
@@ -132,7 +104,6 @@ button:hover {
 .flex-row {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
 }
 
 .item-center-cross-axis {
@@ -162,6 +133,14 @@ button:hover {
 
 /*! INTESTAZIONE PAGINA */
 
+header {
+    margin-bottom: 150px;
+}
+h1 {
+    font-size: 57px;
+    font-weight: bold;
+}
+
 /** NAV-HEADER */
 
 .nav-header {
@@ -174,7 +153,7 @@ button:hover {
     top: 0;
 }
 
-/* Link - Nav in hover */
+/*? Link - Nav in hover */
 header a:not(.button):hover {
     text-decoration: underline;
     text-underline-offset: 20px;                /* Quando i link della nav (tranne button) 
@@ -194,6 +173,17 @@ header a:not(.button):hover {
 
 /** HERO HEADER */
 
+.section-hero {
+    padding-top: 100px;
+    background-color: rgb(152, 185, 212);
+}
+
+.position-container-hero {
+    position: relative;
+    bottom: -80px;
+    ;
+}
+
 .width-container-description-hero {
     flex-basis: 25%;
 }
@@ -206,19 +196,6 @@ header a:not(.button):hover {
     width: 100%;
 }
 
-/* Position Hero (Description-hero + img) */
-.position-container-hero {
-    position:relative;
-    bottom: -80px;;
-}
-
-.bg_color-lightblue {
-    background-color: rgb(152, 185, 212);
-}
-
-
-
-
 #freccia {
     font-size: 35px;
 }
@@ -227,6 +204,16 @@ header a:not(.button):hover {
 /*! CONTENUTO PRINCIPALE */
 
 /** SEZIONE PIANI BUSINESS DROPBOX */
+
+/*? BORDI CARD */
+.border-card {
+    border: 2px solid rgb(118, 118, 118);
+}
+.border-header-card {
+    border-bottom: 2px solid rgb(118, 118, 118);
+}
+
+/*? DIMENSIONE CARD */
 .width-piani-business {
     flex-basis: calc((100% - 42px) / 3);       /* 42 = 20pxgap + 1px bordi */
 }
@@ -245,46 +232,46 @@ header a:not(.button):hover {
     text-align: center;
 }
 
-/* Larghezza linea hr */
+/*? Larghezza linea hr */
 .width-hr-51 {
     width: 51px;
 }
 
-/** Link Acquista Ora */
+/** LINK ACQUISTA ORA */
 
-/* Sottolineatura link */
+/*? Sottolineatura link */
 .decoration-underline {
     text-decoration: underline;
 }
 
-/* Colore link */
+/*? Colore link */
 .text-blu {
     color: rgb(47, 83, 230);
 }
 
 
 /** SEZIONE PARTNER DROPBOX */
-.section-partner-dropbox {
 
-    /* Debug */
-    /* height: 330px; */
-    /* background-color: rgb(226, 208, 43); */
-}
-
-.width-img-partner {
+.container-img-partner {
     flex-basis: 60%;
-
-    /* Debug */
-    height: 330px;
-    background-color: rgb(7, 248, 232);
+}
+.width-img-partner {
+    width: 100%;
+    height: auto;
 }
 
 .width-description-partner {
     flex-basis: 40%;
+}
 
-    /* Debug */
-    height: 200px;
-    background-color: rgb(155, 216, 195);
+.button-partner {
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.a-partner {
+    color: black;
 }
 
 /** SEZIONE OPERAZIONI DROPBOX BUSINESS */
@@ -302,13 +289,10 @@ header a:not(.button):hover {
     height: 200px;
     background-color: orange;
 }
+
 /** SEZIONE CLIENTI DROPBOX BUSINESS */
 .section-clienti-dropbox {
-
     width: 60%;
-    /* Debug */
-    height: 150px;
-    background-color: rgb(226, 208, 43);
 }
 
 
