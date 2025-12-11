@@ -1,4 +1,4 @@
-/*! REGOLE GENERALI */
+/** REGOLE GENERALI */
 
 /** RESET PAGINA */
 * {
@@ -38,7 +38,7 @@ button:hover {
 }
 
 
-/*! CLASSI RIUTILIZZABILI */
+/** CLASSI RIUTILIZZABILI */
 
 /** CONTENITORI GENERICI PAGINA */
 .container {  
@@ -49,13 +49,14 @@ button:hover {
     width: 50%;
     margin: 0 auto;
 }
-.container-piani-business {
+.container-piani-business,
+.container-piani {
     margin: 15px;
 }
 
 /** SPAZIATURE */
 
-/*? Padding */
+/* Padding */
 .padding-top-bottom-7 {
     padding: 7px 0;
 }
@@ -69,7 +70,7 @@ button:hover {
     padding-bottom: 20;
 }
 
-/*? Margin */
+/* Margin */
 .margin-top-bottom7 {
     margin: 7px 0;
 }
@@ -105,7 +106,7 @@ button:hover {
     text-align: center;
 }
 
-/*! REGOLE FLEXBOX */
+/** REGOLE FLEXBOX */
 
 .flex-row {
     display: flex;
@@ -146,7 +147,7 @@ button:hover {
 }
 
 
-/*! INTESTAZIONE PAGINA */
+/** INTESTAZIONE PAGINA */
 
 header {
     margin-bottom: 150px;
@@ -168,7 +169,7 @@ h1 {
     top: 0;
 }
 
-/*? Link - Nav in hover */
+/* Link - Nav in hover */
 header a:not(.button):hover {
     text-decoration: underline;
     text-underline-offset: 20px;                /* Quando i link della nav (tranne button) 
@@ -216,11 +217,11 @@ header a:not(.button):hover {
 }
 
 
-/*! CONTENUTO PRINCIPALE */
+/** CONTENUTO PRINCIPALE */
 
 /** SEZIONE PIANI BUSINESS DROPBOX */
 
-/*? BORDI CARD */
+/* BORDI CARD */
 .border-card {
     border: 2px solid rgb(118, 118, 118);
 }
@@ -228,7 +229,7 @@ header a:not(.button):hover {
     border-bottom: 2px solid rgb(118, 118, 118);
 }
 
-/*? DIMENSIONE CARD */
+/* DIMENSIONE CARD */
 .width-piani-business {
     flex-basis: calc((100% - 42px) / 3);       /* 42 = 20pxgap-20 + 1px bordi */
 }
@@ -247,19 +248,19 @@ header a:not(.button):hover {
     text-align: center;
 }
 
-/*? LINEA hr */
+/* LINEA hr */
 .width-hr-51 {
     width: 51px;
 }
 
 /* LINK ACQUISTA ORA */
 
-/*? Sottolineatura link */
+/* Sottolineatura link */
 .decoration-underline {
     text-decoration: underline;
 }
 
-/*? Colore link */
+/* Colore link */
 .text-blu {
     color: rgb(47, 83, 230);
 }
@@ -305,7 +306,7 @@ header a:not(.button):hover {
 }
 
 
-/*! PIE' DI PAGINA */
+/** PIE' DI PAGINA */
 
 footer {
     width: 100%;
