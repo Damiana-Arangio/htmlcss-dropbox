@@ -1,37 +1,44 @@
+<p align="center">
+  <img src="img/boolean-logo.png" alt="Boolean logo" width="35">
+</p>
+
 <h1 align="center">Layout Dropbox</h1>
 
-<p align="center">
-  Esercizio svolto durante il corso Boolean per esercitarmi nella riproduzione del layout della homepage di Dropbox con HTML e CSS.
-</p>
+Pagina HTML/CSS che riproduce un layout ispirato alla homepage di Dropbox,
+con focus sulla suddivisione in sezioni e sulla cura del dettaglio grafico.
 
 ## Obiettivo
 
-- Riprodurre il layout fornito nello screenshot, cercando di essere il più fedeli possibile.
-- Analizzare il layout con commenti per individuare le macroaree (header, hero, sezioni centrali, footer).
+- Riprodurre il layout fornito nello screenshot, cercando di essere il più fedeli possibile
+- Analizzare il layout con commenti per individuare le macroaree
+  (header, sezione hero, sezioni centrali, footer)
 - Procedere per passi:
-  - prima struttura a blocchi;
-  - poi aggiunta dei dettagli sezione per sezione.
+  - prima struttura a blocchi
+  - poi aggiunta dei dettagli sezione per sezione
 
 ## Approccio e buone pratiche
 
-- Mantenere un codice ordinato e leggibile, senza incartarsi su una singola feature.
-- Creare classi riutilizzabili per gli elementi ricorrenti, centralizzando le regole comuni in CSS.
-- Non lavorare ancora sul responsive completo, ma usare dove possibile unità relative senza aggiungere complessità inutile.
+- Mantenere un codice ordinato e leggibile, senza bloccarsi su una singola feature
+- Creare classi riutilizzabili per gli elementi ricorrenti, centralizzando le regole comuni in CSS
+- Non lavorare ancora sul responsive completo, ma iniziare a usare dove possibile unità relative
+  senza introdurre complessità non necessaria
 
 ## Anteprima
 
-![Anteprima1](img/Screen1.png)
-![Anteprima2](img/Screen2.png)
-![Anteprima3](img/Screen3.png)
-![Anteprima4](img/Screen4.png)
-![Anteprima5](img/Screen5.png)
+![Anteprima 1](img/Screen1.png)  
+![Anteprima 2](img/Screen2.png)  
+![Anteprima 3](img/Screen3.png)  
+![Anteprima 4](img/Screen4.png)  
+![Anteprima 5](img/Screen5.png)
+![Anteprima 5](img/Screen6.png)
+![Anteprima 5](img/Screen7.png)
 
 ## Risorse utilizzate
 
-- Font principale: **Open Sans** (Google Fonts)
+- Font principale: **Open Sans** (Google Fonts)  
 - Icone: **Font Awesome**
 
 ## Tecnologie utilizzate
 
-- HTML  
-- CSS
+- HTML5  
+- CSS3
